@@ -5,7 +5,7 @@ const geocode = require('./weather/geocode');
 const forecast = require('./weather/forecast');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../public');
@@ -69,9 +69,7 @@ app.get('/forecast', (req, res) => {
                 search: req.query.search
             });
         })
-
-    }
-    )
+    })
 });
 
 app.get('*', (req, res) => {
