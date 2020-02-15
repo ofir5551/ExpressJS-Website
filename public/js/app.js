@@ -19,7 +19,7 @@ weatherForm.addEventListener('submit', (event) => {
             else {
                 msg2.setAttribute('style', 'white-space: pre;');
                 msg1.textContent = `${data.location}`;
-                msg2.textContent = `It is currently ${data.forecast.currentTemp}˚ and ${data.forecast.summary}\r\n\r\nHigh: ${data.forecast.highTemp}˚ / Low: ${data.forecast.lowTemp}˚  \r\nChance of rain: ${data.forecast.rainChance}%`;
+                msg2.textContent = `It is currently ${data.forecast.currentTemp}˚ - ${data.forecast.summary}\r\n\r\nHigh: ${data.forecast.highTemp}˚ / Low: ${data.forecast.lowTemp}˚  \r\nChance of rain: ${data.forecast.rainChance}%`;
             }
         })
     })
