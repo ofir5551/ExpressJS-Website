@@ -63,6 +63,7 @@ app.get('/forecast', (req, res) => {
             if (error)
                 return res.send({ error })
 
+            //console.log(`${geoData.location}: ${geoData.latitude}, ${geoData.longtitude}`)
             res.send({
                 location: geoData.location,
                 forecast: forecastData,
