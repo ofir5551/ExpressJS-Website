@@ -8,3 +8,5 @@ run:
     npm start
     http://localhost:3000/
 ```
+
+Also hosted on Heroku: https://o-weather-app.herokuapp.com/
